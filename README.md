@@ -16,7 +16,7 @@ decompressed in a little endian system, and the assumption that types
 such as int or size_t will have their usual sizes, which could break
 some of the code in certain systems.
 
-## How to install
+## How to setup:
 ```
 make
 ```
