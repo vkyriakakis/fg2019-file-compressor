@@ -1,8 +1,8 @@
-#include <stdio.h>
 #include <errno.h>
+#include <stdio.h>
 #include <stdlib.h>
 
-void reportError(char *message, char *filename, int line) {
-	fprintf(stderr, "%s:%d: ", filename, line);
-	perror(message);
+void reportErrorF(char *message, char *filename, const char *func, int line) {
+    fprintf(stderr, "%s: %s,%d: ", filename, func, line);
+    perror(message);
 }
